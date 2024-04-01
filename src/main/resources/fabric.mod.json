@@ -1,41 +1,40 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "enchantingcrafts",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Enchanting Crafts",
+	"description": "A mod that lets you craft enchantments instead of using an enchanting table.",
 	"authors": [
-		"Me!"
+		"stupid cat"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/Ratismal/enchanting-crafts",
+		"sources": "https://github.com/Ratismal/enchanting-crafts"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/enchantingcrafts/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"me.stupidcat.enchantingcrafts.EnchantingCrafts"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"me.stupidcat.enchantingcrafts.EnchantingCraftsModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"enchantingcrafts.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "enchantingcrafts.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
-		"minecraft": "~1.20.4",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"another-mod": "*"
 	}
 }

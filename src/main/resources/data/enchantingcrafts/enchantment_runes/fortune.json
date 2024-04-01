@@ -1,0 +1,42 @@
+{
+  "enchantment": "minecraft:fortune",
+  "recipes": [
+    {
+      "items": [
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:stone_pickaxe"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:diamond"},
+        {"item": "minecraft:emerald"},
+        {"item": "minecraft:gold_ingot"},
+        {"item": "minecraft:golden_pickaxe"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:diamond_block"},
+        {"item": "minecraft:gold_block"},
+        {"item": "minecraft:emerald_block"},
+        {"item": "minecraft:rabbit_foot"},
+        {"item": "minecraft:diamond_pickaxe"}
+      ]
+    }
+  ]
+}

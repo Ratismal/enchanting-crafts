@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "me.stupidcat.enchantingcrafts.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AnvilScreenHandlerMixin",
+    "ExampleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}

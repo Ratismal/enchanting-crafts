@@ -1,4 +1,4 @@
-package com.example.mixin;
+package me.stupidcat.enchantingcrafts.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
