@@ -7,7 +7,7 @@ import me.stupidcat.enchantingcrafts.data.runes.crafting.methods.DummyCraftingMe
 import me.stupidcat.enchantingcrafts.data.runes.crafting.methods.PiglinBarterCraftingMethod;
 
 public class CraftsCraftingMethods {
-    public static final CraftingMethod DUMMY = register("DUMMY", new DummyCraftingMethod());
+    public static final CraftingMethod DUMMY = register("dummy", new DummyCraftingMethod());
     public static final CraftingMethod PIGLIN_BARTERING = register("piglin_barter", new PiglinBarterCraftingMethod());
     public static final CraftingMethod CHARGE_KILL = register("charge_kill", new ChargeKillCraftingMethod());
 
