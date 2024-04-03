@@ -1,0 +1,18 @@
+{
+  "enchantment": "minecraft:multishot",
+  "sigil": "enchantingcrafts:item/sigils/multishot",
+  "recipes": [
+    {
+      "items": [
+        {"item": "minecraft:crossbow"},
+        {"item": "minecraft:crossbow"},
+        {"item": "minecraft:crossbow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    }
+  ]
+}

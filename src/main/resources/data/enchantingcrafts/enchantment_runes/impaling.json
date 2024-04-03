@@ -1,0 +1,12 @@
+{
+  "enchantment": "minecraft:impaling",
+  "sigil": "enchantingcrafts:item/sigils/impaling",
+
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:charge_kill", "entity_group": "aquatic", "count": 10}
+  ]
+}

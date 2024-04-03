@@ -5,7 +5,7 @@ import net.minecraft.recipe.SpecialRecipeSerializer;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
-public class CraftsRecipe {
+public class CraftsRecipes {
     public static final SpecialRecipeSerializer<RuneRecipe> RUNE_SERIALIZER = new SpecialRecipeSerializer<>(RuneRecipe::new);
 
     public static void register() {

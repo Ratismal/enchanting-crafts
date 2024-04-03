@@ -1,0 +1,35 @@
+{
+  "enchantment": "minecraft:soul_speed",
+  "sigil": "enchantingcrafts:item/sigils/soul_speed",
+  "recipes": [
+    {
+      "type": "enchantingcrafts:piglin_barter"
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:gilded_blackstone"},
+        {"item": "minecraft:gilded_blackstone"},
+        {"item": "minecraft:gilded_blackstone"},
+        {"item": "minecraft:glowstone"},
+        {"item": "minecraft:glowstone"},
+        {"item": "minecraft:ghast_tear"},
+        {"tag": "minecraft:soul_speed_blocks"},
+        {"tag": "minecraft:soul_speed_blocks"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:gilded_blackstone"},
+        {"item": "minecraft:gilded_blackstone"},
+        {"item": "minecraft:gold_ingot"},
+        {"item": "minecraft:gold_ingot"},
+        {"item": "minecraft:crimson_fungus"},
+        {"item": "minecraft:warped_fungus"},
+        {"item": "minecraft:snout_armor_trim_smithing_template"},
+        {"item": "minecraft:netherite_upgrade_smithing_template"}
+      ]
+    }
+  ]
+}

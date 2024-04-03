@@ -1,0 +1,8 @@
+{
+  "enchantment": "minecraft:fire_aspect",
+  "sigil": "enchantingcrafts:item/sigils/fire_aspect",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "enchantment": "minecraft:channeling",
+  "sigil": "enchantingcrafts:item/sigils/channeling",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

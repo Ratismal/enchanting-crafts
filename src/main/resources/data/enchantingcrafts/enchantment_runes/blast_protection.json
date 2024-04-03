@@ -1,0 +1,10 @@
+{
+  "enchantment": "minecraft:blast_protection",
+  "sigil": "enchantingcrafts:item/sigils/blast_protection",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

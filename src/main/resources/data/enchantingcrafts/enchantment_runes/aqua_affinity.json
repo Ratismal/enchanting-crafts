@@ -1,0 +1,18 @@
+{
+  "enchantment": "minecraft:aqua_affinity",
+  "sigil": "enchantingcrafts:item/sigils/aqua_affinity",
+  "recipes": [
+    {
+      "items": [
+        {"item": "minecraft:potion"},
+        {"item": "minecraft:potion"},
+        {"item": "minecraft:conduit"},
+        {"item": "minecraft:tropical_fish"},
+        {"item": "minecraft:prismarine_shard"},
+        {"item": "minecraft:prismarine_shard"},
+        {"item": "minecraft:prismarine_crystals"},
+        {"item": "minecraft:prismarine_crystals"}
+      ]
+    }
+  ]
+}

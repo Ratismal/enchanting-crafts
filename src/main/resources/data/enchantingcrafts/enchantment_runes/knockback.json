@@ -1,0 +1,8 @@
+{
+  "enchantment": "minecraft:knockback",
+  "sigil": "enchantingcrafts:item/sigils/knockback",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

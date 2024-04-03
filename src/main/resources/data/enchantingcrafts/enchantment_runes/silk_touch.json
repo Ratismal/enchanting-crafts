@@ -1,0 +1,7 @@
+{
+  "enchantment": "minecraft:silk_touch",
+  "sigil": "enchantingcrafts:item/sigils/silk_touch",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

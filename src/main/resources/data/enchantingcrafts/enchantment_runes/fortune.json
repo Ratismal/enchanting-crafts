@@ -1,5 +1,6 @@
 {
   "enchantment": "minecraft:fortune",
+  "sigil": "enchantingcrafts:item/sigils/fortune",
   "recipes": [
     {
       "items": [
@@ -9,8 +10,8 @@
         {"item": "minecraft:lapis_lazuli"},
         {"item": "minecraft:lapis_lazuli"},
         {"item": "minecraft:lapis_lazuli"},
-        {"item": "minecraft:lapis_lazuli"},
-        {"item": "minecraft:stone_pickaxe"}
+        {"item": "minecraft:stone_pickaxe"},
+        {"item": "minecraft:lapis_lazuli"}
       ]
     },
 
@@ -29,6 +30,7 @@
 
     {
       "items": [
+        {"item": "minecraft:lapis_block"},
         {"item": "minecraft:lapis_block"},
         {"item": "minecraft:lapis_block"},
         {"item": "minecraft:diamond_block"},

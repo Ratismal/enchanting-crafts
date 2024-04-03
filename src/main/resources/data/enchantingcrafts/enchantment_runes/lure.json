@@ -1,0 +1,44 @@
+{
+  "enchantment": "minecraft:lure",
+  "sigil": "enchantingcrafts:item/sigils/lure",
+  "recipes": [
+    {
+      "items": [
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:salmon"},
+        {"item": "minecraft:salmon"},
+        {"item": "minecraft:salmon"},
+        {"item": "minecraft:salmon"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:tropical_fish"},
+        {"item": "minecraft:tropical_fish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"}
+      ]
+    }
+  ]
+}

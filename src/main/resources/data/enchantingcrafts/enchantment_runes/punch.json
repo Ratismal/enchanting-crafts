@@ -1,0 +1,8 @@
+{
+  "enchantment": "minecraft:punch",
+  "sigil": "enchantingcrafts:item/sigils/punch",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

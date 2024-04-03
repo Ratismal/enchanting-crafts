@@ -1,0 +1,40 @@
+{
+  "enchantment": "minecraft:feather_falling",
+  "sigil": "enchantingcrafts:item/sigils/feather_falling",
+  "recipes": [
+    {
+      "items": [
+        {"item": "minecraft:hay_block"},
+        {"tag": "minecraft:wool_carpet"},
+        {"tag": "minecraft:wool_carpet"},
+        {"item": "minecraft:feather"},
+        {"item": "minecraft:feather"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:hay_block"},
+        {"tag": "minecraft:wool"},
+        {"tag": "minecraft:wool"},
+        {"tag": "minecraft:wool_carpet"},
+        {"item": "minecraft:feather"},
+        {"item": "minecraft:feather"},
+        {"item": "minecraft:slime_block"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:hay_block"},
+        {"item": "minecraft:hay_block"},
+        {"tag": "minecraft:water_bucket"},
+        {"tag": "minecraft:wool_carpet"},
+        {"item": "minecraft:slime_block"},
+        {"item": "minecraft:slime_block"},
+        {"item": "minecraft:honey_block"},
+        {"item": "minecraft:honey_block"}
+      ]
+    }
+  ]
+}

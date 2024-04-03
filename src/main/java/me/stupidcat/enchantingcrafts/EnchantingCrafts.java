@@ -3,8 +3,8 @@ package me.stupidcat.enchantingcrafts;
 import me.stupidcat.enchantingcrafts.data.runes.RuneDataResourceReloadListener;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.minecraft.resource.ResourceManager;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -33,7 +33,9 @@ public class EnchantingCrafts implements ModInitializer {
 	public void register() {
 		CraftsItems.register();
 		CraftsItemGroups.register();
-		CraftsRecipe.register();
+		CraftsRecipes.register();
+		CraftsCraftingMethods.register();
+		CraftsLoot.register();
 	}
 
 	public static Identifier Id(String path) {

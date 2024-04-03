@@ -1,0 +1,7 @@
+{
+  "enchantment": "minecraft:flame",
+  "sigil": "enchantingcrafts:item/sigils/flame",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "enchantment": "minecraft:fire_protection",
+  "sigil": "enchantingcrafts:item/sigils/fire_protection",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

@@ -15,6 +15,8 @@ import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.text.Text;
 
+import java.util.Objects;
+
 public class CraftsItemGroups {
     public static final ItemGroup CRAFTS_ITEMS = register("enchanting_crafts_items", FabricItemGroup.builder()
             .icon(() -> new ItemStack(CraftsItems.BLANK_RUNE))
@@ -26,8 +28,9 @@ public class CraftsItemGroups {
                 entries.add(AttunedRuneItem.getMega());
 
                 for (var entry : AttunedRuneItem.getSortedEnchantmentList()) {
-                    for (var i = 1; i <= entry.enchantment.getMaxLevel(); i++) {
-                        entries.add(AttunedRuneItem.Of(EnchantmentHelper.getEnchantmentId(entry.enchantment), i));
+                    var data = RuneDataEntries.runeMap.get(entry.enchantment);
+                    for (var i = 1; i <= Math.max(entry.enchantment.getMaxLevel(), data.recipes.size()); i++) {
+                        entries.add(AttunedRuneItem.Of(Objects.requireNonNull(EnchantmentHelper.getEnchantmentId(entry.enchantment)), i));
                     }
                 }
             })

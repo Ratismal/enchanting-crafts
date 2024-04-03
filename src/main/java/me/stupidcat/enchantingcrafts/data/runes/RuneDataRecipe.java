@@ -1,25 +1,37 @@
 package me.stupidcat.enchantingcrafts.data.runes;
 
 import com.google.gson.JsonElement;
-import net.minecraft.data.server.recipe.RecipeProvider;
-import net.minecraft.inventory.Inventory;
-import net.minecraft.inventory.RecipeInputInventory;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.predicate.item.ItemPredicate;
+import net.minecraft.potion.PotionUtil;
+import net.minecraft.potion.Potions;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.recipe.RecipeInputProvider;
-import net.minecraft.registry.tag.ItemTags;
-import net.minecraft.registry.tag.TagKey;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class RuneDataRecipe {
+    public final JsonElement json;
+    public final List<Ingredient> predicates = new ArrayList<>();
+    public final RuneData runeData;
+    public final int level;
 
-    public List<Ingredient> predicates = new ArrayList<>();
-    public RuneData runeData;
+    public RuneDataRecipe(JsonElement json, RuneData runeData, int level) {
+        this.runeData = runeData;
+        this.level = level;
+        this.json = json;
+
+        if (json.getAsJsonObject().has("items")) {
+            var itemArray = json.getAsJsonObject().get("items");
+            for (var item : itemArray.getAsJsonArray().asList()) {
+                var ingredient = Ingredient.fromJson(item, false);
+                if (ingredient.test(Items.POTION.getDefaultStack())) {
+                    ingredient = Ingredient.ofStacks(PotionUtil.setPotion(new ItemStack(Items.POTION), Potions.WATER));
+                }
+                this.predicates.add(ingredient);
+            }
+        }
+    }
 
     public boolean match(List<ItemStack> items) {
         if (predicates.size() != items.size()) return false;
@@ -44,16 +56,7 @@ public class RuneDataRecipe {
         return true;
     }
 
-    public static RuneDataRecipe Deserialize(JsonElement json, RuneData runeData) {
-        var recipe = new RuneDataRecipe();
-
-        var itemArray = json.getAsJsonObject().get("items");
-        recipe.runeData = runeData;
-
-        for (var item : itemArray.getAsJsonArray().asList()) {
-            recipe.predicates.add(Ingredient.fromJson(item, false));
-        }
-
-        return recipe;
+    public static RuneDataRecipe Deserialize(JsonElement json, RuneData runeData, int level) {
+        return new RuneDataRecipe(json, runeData, level);
     }
 }

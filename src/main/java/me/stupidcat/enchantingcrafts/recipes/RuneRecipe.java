@@ -1,14 +1,12 @@
 package me.stupidcat.enchantingcrafts.recipes;
 
 import me.stupidcat.enchantingcrafts.CraftsItems;
-import me.stupidcat.enchantingcrafts.CraftsRecipe;
+import me.stupidcat.enchantingcrafts.CraftsRecipes;
 import me.stupidcat.enchantingcrafts.data.runes.RuneDataEntries;
 import me.stupidcat.enchantingcrafts.item.AttunedRuneItem;
 import net.minecraft.inventory.RecipeInputInventory;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
-import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.recipe.RecipeSerializer;
 import net.minecraft.recipe.SpecialCraftingRecipe;
 import net.minecraft.recipe.book.CraftingRecipeCategory;
@@ -17,7 +15,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class RuneRecipe extends SpecialCraftingRecipe {
@@ -108,6 +105,7 @@ public class RuneRecipe extends SpecialCraftingRecipe {
         if (applyEnchantments) {
             var resultRune = rune.copy();
             AttunedRuneItem.apply(resultRune, enchantments);
+            resultRune.setCount(1);
 
             return resultRune;
         } else {
@@ -122,6 +120,6 @@ public class RuneRecipe extends SpecialCraftingRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return CraftsRecipe.RUNE_SERIALIZER;
+        return CraftsRecipes.RUNE_SERIALIZER;
     }
 }

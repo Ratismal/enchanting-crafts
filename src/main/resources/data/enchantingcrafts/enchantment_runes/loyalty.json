@@ -1,0 +1,9 @@
+{
+  "enchantment": "minecraft:loyalty",
+  "sigil": "enchantingcrafts:item/sigils/loyalty",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

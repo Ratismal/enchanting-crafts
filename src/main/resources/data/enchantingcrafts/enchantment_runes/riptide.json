@@ -1,0 +1,9 @@
+{
+  "enchantment": "minecraft:riptide",
+  "sigil": "enchantingcrafts:item/sigils/riptide",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

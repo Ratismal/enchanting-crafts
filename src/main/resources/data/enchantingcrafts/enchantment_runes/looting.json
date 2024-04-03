@@ -1,0 +1,9 @@
+{
+  "enchantment": "minecraft:looting",
+  "sigil": "enchantingcrafts:item/sigils/looting",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

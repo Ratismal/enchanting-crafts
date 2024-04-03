@@ -1,0 +1,10 @@
+{
+  "enchantment": "minecraft:projectile_protection",
+  "sigil": "enchantingcrafts:item/sigils/projectile_protection",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

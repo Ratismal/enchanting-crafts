@@ -1,0 +1,11 @@
+{
+  "enchantment": "minecraft:sharpness",
+  "sigil": "enchantingcrafts:item/sigils/sharpness",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:charge_kill", "count": 20}
+  ]
+}

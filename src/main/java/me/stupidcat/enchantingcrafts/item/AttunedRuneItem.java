@@ -82,7 +82,6 @@ public class AttunedRuneItem extends Item {
         var enchantments = new NbtList();
 
         for (var enchant : sortedEnchantList) {
-
             var node = new NbtCompound();
 
             node.putString("enchantment", Registries.ENCHANTMENT.getId(enchant.enchantment).toString());
@@ -180,8 +179,6 @@ public class AttunedRuneItem extends Item {
 
     @Override
     public boolean hasGlint(ItemStack stack) {
-        var tag = stack.getNbt();
-
-        return tag != null && tag.contains("enchants");
+        return true;
     }
 }

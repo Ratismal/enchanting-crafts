@@ -1,0 +1,11 @@
+{
+  "enchantment": "minecraft:smite",
+  "sigil": "enchantingcrafts:item/sigils/smite",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:charge_kill", "entity_group": "undead", "count": 10}
+  ]
+}

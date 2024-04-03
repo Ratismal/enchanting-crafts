@@ -1,0 +1,64 @@
+{
+  "enchantment": "minecraft:unbreaking",
+  "sigil": "enchantingcrafts:item/sigils/unbreaking",
+  "recipes": [
+    {
+      "items": [
+        {"item": "minecraft:tuff"},
+        {"item": "minecraft:tuff"},
+        {"item": "minecraft:tuff"},
+        {"item": "minecraft:deepslate"},
+        {"item": "minecraft:deepslate"},
+        {"item": "minecraft:deepslate"},
+        {"item": "minecraft:iron_ingot"},
+        {"item": "minecraft:slime_ball"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:obsidian"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:slime_block"},
+        {"item": "minecraft:iron_block"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:obsidian"},
+        {"item": "minecraft:obsidian"},
+        {"item": "minecraft:obsidian"},
+        {"tag": "minecraft:anvil"},
+        {"item": "minecraft:netherite_scrap"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"}
+      ]
+    },
+    {
+      "items": [
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"}
+      ]
+    },
+    {
+      "items": [
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"},
+        {"item":  "minecraft:bedrock"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "enchantment": "minecraft:bane_of_arthropods",
+  "sigil": "enchantingcrafts:item/sigils/bane_of_arthropods",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {
+      "type": "enchantingcrafts:charge_kill",
+      "entity_group": "arthropod",
+      "count": 10
+    }
+  ]
+}

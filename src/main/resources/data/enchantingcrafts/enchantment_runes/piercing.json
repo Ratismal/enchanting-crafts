@@ -1,0 +1,10 @@
+{
+  "enchantment": "minecraft:piercing",
+  "sigil": "enchantingcrafts:item/sigils/piercing",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

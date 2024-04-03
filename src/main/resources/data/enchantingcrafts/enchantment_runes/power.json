@@ -1,0 +1,11 @@
+{
+  "enchantment": "minecraft:power",
+  "sigil": "enchantingcrafts:item/sigils/power",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

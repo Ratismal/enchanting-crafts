@@ -1,0 +1,9 @@
+{
+  "enchantment": "minecraft:quick_charge",
+  "sigil": "enchantingcrafts:item/sigils/quick_charge",
+  "recipes": [
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"},
+    {"type": "enchantingcrafts:dummy"}
+  ]
+}

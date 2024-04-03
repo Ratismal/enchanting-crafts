@@ -19,7 +19,10 @@
 			"me.stupidcat.enchantingcrafts.EnchantingCrafts"
 		],
 		"client": [
-			"me.stupidcat.enchantingcrafts.EnchantingCraftsModClient"
+          "me.stupidcat.enchantingcrafts.EnchantingCraftsClient"
+		],
+		"rei_client": [
+			"me.stupidcat.enchantingcrafts.compat.rei.CraftsReiPlugin"
 		]
 	},
 	"mixins": [
