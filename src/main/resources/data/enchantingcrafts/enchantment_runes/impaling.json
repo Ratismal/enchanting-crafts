@@ -3,10 +3,50 @@
   "sigil": "enchantingcrafts:item/sigils/impaling",
 
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:charge_kill", "entity_group": "aquatic", "count": 10}
+    {
+      "items": [
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:salmon"},
+        {"item": "minecraft:salmon"},
+        {"item": "minecraft:spyglass"}
+      ]
+    },
+    {
+      "items": [
+
+        {"item": "minecraft:prismarine_crystals"},
+        {"item": "minecraft:prismarine_crystals"},
+        {"item": "minecraft:prismarine_crystals"},
+        {"item": "minecraft:prismarine_crystals"},
+        {"item": "minecraft:ink_sac"},
+        {"item": "minecraft:ink_sac"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:prismarine_shard"},
+        {"item": "minecraft:prismarine_shard"},
+        {"item": "minecraft:prismarine_shard"},
+        {"item": "minecraft:prismarine_shard"},
+        {"item": "minecraft:glow_ink_sac"},
+        {"item": "minecraft:glow_ink_sac"},
+        {"item": "minecraft:tropical_fish"},
+        {"item": "minecraft:tropical_fish"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:sea_lantern"},
+        {"item": "minecraft:sea_lantern"},
+        {"item": "minecraft:sea_lantern"},
+        {"item": "minecraft:sea_lantern"},
+        {"item": "minecraft:wet_sponge"},
+        {"item": "minecraft:tide_armor_trim_smithing_template"}
+      ]
+    },
+    {"type": "enchantingcrafts:charge_kill", "entity_group": "aquatic", "count": 20}
   ]
 }

@@ -5,8 +5,8 @@
     {
       "items": [
         {"item": "minecraft:hay_block"},
-        {"tag": "minecraft:wool_carpet"},
-        {"tag": "minecraft:wool_carpet"},
+        {"tag": "minecraft:wool_carpets"},
+        {"tag": "minecraft:wool_carpets"},
         {"item": "minecraft:feather"},
         {"item": "minecraft:feather"}
       ]
@@ -17,7 +17,7 @@
         {"item": "minecraft:hay_block"},
         {"tag": "minecraft:wool"},
         {"tag": "minecraft:wool"},
-        {"tag": "minecraft:wool_carpet"},
+        {"tag": "minecraft:wool_carpets"},
         {"item": "minecraft:feather"},
         {"item": "minecraft:feather"},
         {"item": "minecraft:slime_block"}
@@ -28,13 +28,15 @@
       "items": [
         {"item": "minecraft:hay_block"},
         {"item": "minecraft:hay_block"},
-        {"tag": "minecraft:water_bucket"},
-        {"tag": "minecraft:wool_carpet"},
+        {"item": "minecraft:water_bucket"},
+        {"tag": "minecraft:wool_carpets"},
         {"item": "minecraft:slime_block"},
         {"item": "minecraft:slime_block"},
         {"item": "minecraft:honey_block"},
         {"item": "minecraft:honey_block"}
       ]
-    }
+    },
+
+    {"type": "enchantingcrafts:charge_take_damage", "tag": "is_fall", "count": 40}
   ]
 }

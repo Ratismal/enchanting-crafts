@@ -2,7 +2,28 @@
   "enchantment": "minecraft:punch",
   "sigil": "enchantingcrafts:item/sigils/punch",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:bow"},
+        {"item": "minecraft:bow"},
+        {"item": "minecraft:fletching_table"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:piston"},
+        {"item": "minecraft:piston"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:goat_horn"},
+        {"item": "minecraft:tipped_arrow"},
+        {"item": "minecraft:tipped_arrow"},
+        {"item": "minecraft:tipped_arrow"},
+        {"item": "minecraft:tipped_arrow"}
+      ]
+    }
   ]
 }

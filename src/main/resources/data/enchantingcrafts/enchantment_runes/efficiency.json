@@ -2,10 +2,65 @@
   "enchantment": "minecraft:efficiency",
   "sigil": "enchantingcrafts:item/sigils/efficiency",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:coal"},
+        {"item": "minecraft:coal"},
+        {"item": "minecraft:coal"},
+        {"item": "minecraft:coal"},
+        {"item": "minecraft:stone"},
+        {"item": "minecraft:stone"},
+        {"item": "minecraft:stone"},
+        {"item": "minecraft:stone"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:sweet_berries"},
+        {"item": "minecraft:sweet_berries"},
+        {"item": "minecraft:redstone"},
+        {"item": "minecraft:redstone"},
+        {"item": "minecraft:redstone"},
+        {"item": "minecraft:redstone"},
+        {"item": "minecraft:deepslate"},
+        {"item": "minecraft:deepslate"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:honeycomb"},
+        {"item": "minecraft:honeycomb"},
+        {"item": "minecraft:redstone_block"},
+        {"item": "minecraft:glowstone"},
+        {"item": "minecraft:nether_bricks"},
+        {"item": "minecraft:nether_bricks"},
+        {"item": "minecraft:nether_bricks"},
+        {"item": "minecraft:nether_bricks"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:cookie"},
+        {"item": "minecraft:cookie"},
+        {"item": "minecraft:redstone_block"},
+        {"item": "minecraft:redstone_block"},
+        {"item": "minecraft:shroomlight"},
+        {"item": "minecraft:obsidian"},
+        {"item": "minecraft:obsidian"},
+        {"item": "minecraft:obsidian"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:glow_berries"},
+        {"item": "minecraft:glow_berries"},
+        {"item": "minecraft:redstone_block"},
+        {"item": "minecraft:redstone_block"},
+        {"item": "minecraft:redstone_block"},
+        {"item": "minecraft:redstone_block"},
+        {"item": "minecraft:crying_obsidian"},
+        {"item": "minecraft:crying_obsidian"}
+      ]
+    }
   ]
 }

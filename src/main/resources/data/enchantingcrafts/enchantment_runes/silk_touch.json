@@ -2,6 +2,17 @@
   "enchantment": "minecraft:silk_touch",
   "sigil": "enchantingcrafts:item/sigils/silk_touch",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:shears"},
+        {"item": "minecraft:emerald"},
+        {"item": "minecraft:emerald"},
+        {"item": "minecraft:gold_ingot"},
+        {"item": "minecraft:gold_ingot"},
+        {"item": "minecraft:string"},
+        {"item": "minecraft:ender_pearl"},
+        {"item": "minecraft:ender_pearl"}
+      ]
+    }
   ]
 }

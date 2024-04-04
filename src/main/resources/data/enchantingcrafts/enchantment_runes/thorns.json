@@ -2,8 +2,41 @@
   "enchantment": "minecraft:thorns",
   "sigil": "enchantingcrafts:item/sigils/thorns",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:cactus"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:cactus"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:cactus"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:cactus"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:magma_block"},
+        {"item": "minecraft:magma_cream"},
+        {"item": "minecraft:magma_block"},
+        {"item": "minecraft:magma_cream"},
+        {"item": "minecraft:magma_cream"},
+        {"item": "minecraft:magma_block"},
+        {"item": "minecraft:magma_cream"},
+        {"item": "minecraft:magma_block"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:tube_coral"},
+        {"item": "minecraft:pointed_dripstone"},
+        {"item": "minecraft:brain_coral"},
+        {"item": "minecraft:pointed_dripstone"},
+        {"item": "minecraft:pointed_dripstone"},
+        {"item": "minecraft:bubble_coral"},
+        {"item": "minecraft:fire_coral"},
+        {"item": "minecraft:horn_coral"}
+      ]
+    }
   ]
 }

@@ -2,6 +2,17 @@
   "enchantment": "minecraft:infinity",
   "sigil": "enchantingcrafts:item/sigils/infinity",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:bow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:bow"}
+      ]
+    }
   ]
 }

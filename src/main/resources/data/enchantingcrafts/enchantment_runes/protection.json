@@ -2,9 +2,35 @@
   "enchantment": "minecraft:protection",
   "sigil": "enchantingcrafts:item/sigils/protection",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:leather"},
+        {"item": "minecraft:leather"},
+        {"item": "minecraft:leather"},
+        {"item": "minecraft:leather"},
+        {"item": "minecraft:armor_stand"},
+        {"item": "minecraft:armor_stand"},
+        {"item": "minecraft:shield"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:chain"},
+        {"item": "minecraft:chain"},
+        {"item": "minecraft:chain"},
+        {"item": "minecraft:chain"},
+        {"item": "minecraft:dripstone_block"},
+        {"item": "minecraft:dripstone_block"},
+        {"item": "minecraft:shield"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:gold_block"},
+        {"tag": "minecraft:anvil"},
+        {"tag": "minecraft:trim_templates"}
+      ]
+    },
+    {"type": "enchantingcrafts:charge_take_damage", "count": 60}
   ]
 }

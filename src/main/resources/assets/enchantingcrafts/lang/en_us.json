@@ -5,5 +5,8 @@
   "item.enchantingcrafts.charged_rune": "Charged Rune",
   "item.enchantingcrafts.charged_rune_tooltip": "Enchanting Level: %s",
   "item.enchantingcrafts.attuned_rune": "Attuned Rune",
-  "item.enchantingcrafts.mega_rune": "The Almighty Rune"
+  "item.enchantingcrafts.mega_rune": "The Almighty Rune",
+
+  "item.enchantingcrafts.attuned_rune.tooltip.checks": " ...%s",
+  "item.enchantingcrafts.attuned_rune.tooltip.checks.standalone": "%s..."
 }

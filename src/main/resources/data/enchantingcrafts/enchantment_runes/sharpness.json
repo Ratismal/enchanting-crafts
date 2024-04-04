@@ -2,10 +2,48 @@
   "enchantment": "minecraft:sharpness",
   "sigil": "enchantingcrafts:item/sigils/sharpness",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
+    {
+      "items": [
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:shears"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+
+    {
+      "items": [
+        {"tag": "c:quartz"},
+        {"tag": "c:quartz"},
+        {"tag": "c:quartz"},
+        {"tag": "c:quartz"},
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:flint"},
+        {"item": "minecraft:flint"}
+      ]
+    },
+
+    {
+      "items": [
+        {"tag": "minecraft:anvil"},
+        {"tag": "minecraft:anvil"},
+        {"item": "minecraft:diamond_axe"},
+        {"item": "minecraft:diamond_sword"}
+      ]
+    },
+
     {"type": "enchantingcrafts:charge_kill", "count": 20}
   ]
 }

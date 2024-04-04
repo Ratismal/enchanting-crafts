@@ -2,10 +2,53 @@
   "enchantment": "minecraft:power",
   "sigil": "enchantingcrafts:item/sigils/power",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:target"},
+        {"item": "minecraft:target"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:bow"},
+        {"item": "minecraft:bow"},
+        {"item": "minecraft:firework_rocket"},
+        {"item": "minecraft:firework_rocket"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"tag": "c:quartz"},
+        {"tag": "c:quartz"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:ghast_tear"},
+        {"item": "minecraft:ghast_tear"},
+        {"item": "minecraft:gunpowder"},
+        {"item": "minecraft:gunpowder"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"}
+      ]
+    },
+    {"type": "enchantingcrafts:charge_kill", "count": 40}
   ]
 }

@@ -1,6 +1,7 @@
 package me.stupidcat.enchantingcrafts.item;
 
 import me.stupidcat.enchantingcrafts.CraftsItems;
+import me.stupidcat.enchantingcrafts.data.runes.crafting.CraftingMethod;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -117,8 +118,11 @@ public class AttunedRuneItem extends Item {
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         var enchants = getEnchantments(stack);
 
+        var checks = stack.getSubNbt(CraftingMethod.CHECK_KEY);
+
         for (var entry : enchants.entrySet()) {
             var enchant = entry.getKey();
+            var enchantId = EnchantmentHelper.getEnchantmentId(enchant);
 
             var formatting = Formatting.DARK_PURPLE;
             if (enchant.isCursed()) {
@@ -127,7 +131,23 @@ public class AttunedRuneItem extends Item {
                 formatting = Formatting.GOLD;
             }
 
-            tooltip.add(enchant.getName(entry.getValue()).copy().setStyle(Style.EMPTY.withColor(TextColor.fromFormatting(formatting))));
+            var append = Text.empty();
+            if (checks != null && checks.contains(enchantId.toString())) {
+                append = Text.translatable("item.enchantingcrafts.attuned_rune.tooltip.checks", checks.getInt(enchantId.toString())).setStyle(Style.EMPTY.withColor(Formatting.DARK_RED));
+            }
+
+            var enchantName = enchant.getName(entry.getValue()).copy().setStyle(Style.EMPTY.withColor(TextColor.fromFormatting(formatting)));
+
+            tooltip.add(enchantName.append(append));
+        }
+
+        if (checks != null) {
+            for (var key : checks.getKeys()) {
+                var enchant = Registries.ENCHANTMENT.get(Identifier.tryParse(key));
+                if (!enchants.containsKey(enchant)) {
+                    tooltip.add(Text.translatable("item.enchantingcrafts.attuned_rune.tooltip.checks.standalone", checks.getInt(key)).setStyle(Style.EMPTY.withColor(Formatting.DARK_RED)));
+                }
+            }
         }
     }
 

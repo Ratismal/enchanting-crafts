@@ -2,9 +2,50 @@
   "enchantment": "minecraft:piercing",
   "sigil": "enchantingcrafts:item/sigils/piercing",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:crossbow"},
+        {"item": "minecraft:target"},
+        {"item": "minecraft:target"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:crossbow"},
+        {"item": "minecraft:firework_star"},
+        {"item": "minecraft:firework_star"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:amethyst_shard"},
+        {"item": "minecraft:bell"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:end_crystal"},
+        {"item": "minecraft:bamboo"},
+        {"item": "minecraft:bamboo"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"}
+      ]
+    }
   ]
 }

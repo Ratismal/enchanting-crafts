@@ -2,8 +2,36 @@
   "enchantment": "minecraft:sweeping",
   "sigil": "enchantingcrafts:item/sigils/sweeping",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:lantern"},
+        {"item": "minecraft:lantern"},
+        {"item": "minecraft:calcite"},
+        {"item": "minecraft:calcite"},
+        {"item": "minecraft:diorite"},
+        {"item": "minecraft:diorite"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:soul_lantern"},
+        {"item": "minecraft:soul_lantern"},
+        {"item": "minecraft:music_disc_11"},
+        {"item": "minecraft:mud"},
+        {"item": "minecraft:mud"},
+        {"item": "minecraft:granite"},
+        {"item": "minecraft:granite"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:mangrove_propagule"},
+        {"item": "minecraft:mangrove_propagule"},
+        {"item": "minecraft:beehive"},
+        {"tag":  "minecraft:decorated_pot_sherds"},
+        {"tag":  "minecraft:decorated_pot_sherds"},
+        {"tag":  "minecraft:decorated_pot_sherds"}
+      ]
+    }
   ]
 }

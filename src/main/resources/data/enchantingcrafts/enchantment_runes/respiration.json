@@ -2,8 +2,26 @@
   "enchantment": "minecraft:respiration",
   "sigil": "enchantingcrafts:item/sigils/respiration",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:salmon"},
+        {"item": "minecraft:cod"},
+        {"item": "minecraft:tropical_fish"},
+        {"item": "minecraft:nautilus_shell"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:pufferfish"},
+        {"item": "minecraft:water_bucket"},
+        {"item": "minecraft:potion"},
+        {"item": "minecraft:conduit"}
+      ]
+    },
+    {"type": "enchantingcrafts:submerge", "time": 6000, "depth": 8}
   ]
 }

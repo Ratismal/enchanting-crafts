@@ -2,10 +2,50 @@
   "enchantment": "minecraft:smite",
   "sigil": "enchantingcrafts:item/sigils/smite",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:charge_kill", "entity_group": "undead", "count": 10}
+    {
+      "items": [
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:carrot"},
+        {"item": "minecraft:potato"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:rotten_flesh"},
+        {"item": "minecraft:phantom_membrane"},
+        {"item": "minecraft:phantom_membrane"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:bone"},
+        {"item": "minecraft:coal"},
+        {"item": "minecraft:coal"},
+        {"item": "minecraft:wither_skeleton_skull"}
+      ]
+    },
+
+    {"type": "enchantingcrafts:charge_kill", "entity_group": "undead", "count": 20}
   ]
 }

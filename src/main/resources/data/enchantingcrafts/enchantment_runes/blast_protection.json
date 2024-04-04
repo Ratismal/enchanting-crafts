@@ -2,9 +2,39 @@
   "enchantment": "minecraft:blast_protection",
   "sigil": "enchantingcrafts:item/sigils/blast_protection",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:gunpowder"},
+        {"item": "minecraft:gunpowder"},
+        {"item": "minecraft:gunpowder"},
+        {"item": "minecraft:gunpowder"},
+        {"tag": "minecraft:candles"},
+        {"tag": "minecraft:candles"},
+        {"item": "minecraft:shield"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:redstone_torch"},
+        {"item": "minecraft:redstone_torch"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:ghast_tear"},
+        {"item": "minecraft:ghast_tear"},
+        {"item": "minecraft:ghast_tear"},
+        {"item": "minecraft:ghast_tear"},
+        {"item": "minecraft:firework_star"},
+        {"item": "minecraft:firework_star"},
+        {"item": "minecraft:firework_rocket"},
+        {"item": "minecraft:firework_rocket"}
+      ]
+    },
+    {"type": "enchantingcrafts:charge_take_damage", "tag": "is_explosion", "count": 40}
   ]
 }

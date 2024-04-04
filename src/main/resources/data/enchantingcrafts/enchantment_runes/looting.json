@@ -2,8 +2,43 @@
   "enchantment": "minecraft:looting",
   "sigil": "enchantingcrafts:item/sigils/looting",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:stone_sword"},
+        {"item": "minecraft:lapis_lazuli"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:lapis_lazuli"},
+        {"item": "minecraft:diamond"},
+        {"item": "minecraft:emerald"},
+        {"item": "minecraft:gold_ingot"},
+        {"item": "minecraft:golden_sword"}
+      ]
+    },
+
+    {
+      "items": [
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:lapis_block"},
+        {"item": "minecraft:diamond_block"},
+        {"item": "minecraft:gold_block"},
+        {"item": "minecraft:emerald_block"},
+        {"item": "minecraft:rabbit_foot"},
+        {"item": "minecraft:diamond_sword"}
+      ]
+    }
   ]
 }

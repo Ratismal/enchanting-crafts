@@ -6,6 +6,7 @@ import net.minecraft.item.Items;
 import net.minecraft.potion.PotionUtil;
 import net.minecraft.potion.Potions;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.BlockTags;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,7 @@ public class RuneDataRecipe {
                 if (ingredient.test(Items.POTION.getDefaultStack())) {
                     ingredient = Ingredient.ofStacks(PotionUtil.setPotion(new ItemStack(Items.POTION), Potions.WATER));
                 }
+
                 this.predicates.add(ingredient);
             }
         }

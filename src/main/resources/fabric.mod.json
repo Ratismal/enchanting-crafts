@@ -26,11 +26,7 @@
 		]
 	},
 	"mixins": [
-		"enchantingcrafts.mixins.json",
-		{
-			"config": "enchantingcrafts.client.mixins.json",
-			"environment": "client"
-		}
+		"enchantingcrafts.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",

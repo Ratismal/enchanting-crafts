@@ -2,8 +2,41 @@
   "enchantment": "minecraft:swift_sneak",
   "sigil": "enchantingcrafts:item/sigils/swift_sneak",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk_vein"},
+        {"item": "minecraft:sculk_vein"},
+        {"item": "minecraft:sculk_vein"},
+        {"item": "minecraft:sculk_vein"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk_sensor"},
+        {"item": "minecraft:sculk_shrieker"},
+        {"item": "minecraft:sculk_vein"},
+        {"item": "minecraft:sculk_vein"},
+        {"item": "minecraft:sculk_vein"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk"},
+        {"item": "minecraft:sculk_catalyst"},
+        {"item": "minecraft:calibrated_sculk_sensor"},
+        {"item": "minecraft:sculk_vein"},
+        {"item": "minecraft:sculk_vein"},
+        {"item": "minecraft:sculk_vein"}
+      ]
+    }
   ]
 }

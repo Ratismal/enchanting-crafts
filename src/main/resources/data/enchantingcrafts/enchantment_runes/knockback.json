@@ -2,7 +2,24 @@
   "enchantment": "minecraft:knockback",
   "sigil": "enchantingcrafts:item/sigils/knockback",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:piston"},
+        {"item": "minecraft:piston"},
+        {"item": "minecraft:slime_block"},
+        {"item": "minecraft:slime_block"},
+        {"item": "minecraft:brush"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:sticky_piston"},
+        {"item": "minecraft:sticky_piston"},
+        {"item": "minecraft:tnt"},
+        {"item": "minecraft:goat_horn"},
+        {"item": "minecraft:shield"},
+        {"item": "minecraft:bell"}
+      ]
+    }
   ]
 }

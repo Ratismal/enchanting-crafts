@@ -2,8 +2,32 @@
   "enchantment": "minecraft:riptide",
   "sigil": "enchantingcrafts:item/sigils/riptide",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:lightning_rod"},
+        {"item": "minecraft:water_bucket"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:lightning_rod"},
+        {"item": "minecraft:tadpole_bucket"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:lightning_rod"},
+        {"item": "minecraft:magenta_glazed_terracotta"},
+        {"item": "minecraft:ochre_froglight"},
+        {"item": "minecraft:verdant_froglight"},
+        {"item": "minecraft:pearlescent_froglight"}
+      ]
+    }
   ]
 }

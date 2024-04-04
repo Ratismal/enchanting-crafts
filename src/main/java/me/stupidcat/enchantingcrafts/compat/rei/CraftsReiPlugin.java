@@ -62,8 +62,11 @@ public class CraftsReiPlugin implements REIClientPlugin {
                     // TODO: Add other recipe types
                 } else {
                     var ingredients = new ArrayList<Ingredient>(recipe.predicates);
-                    ingredients.add(4, Ingredient.ofStacks(inputRune));
-
+                    if (ingredients.size() >= 4) {
+                        ingredients.add(4, Ingredient.ofStacks(inputRune));
+                    } else {
+                        ingredients.add(Ingredient.ofStacks(inputRune));
+                    }
                     var defaultedList = DefaultedList.copyOf(Ingredient.empty(), ingredients.toArray(new Ingredient[0]));
 
                     var rec = new ShapelessRecipe(id, "rune", CraftingRecipeCategory.MISC, outputRune, defaultedList);

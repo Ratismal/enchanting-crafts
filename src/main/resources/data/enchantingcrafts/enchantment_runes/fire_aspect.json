@@ -2,7 +2,16 @@
   "enchantment": "minecraft:fire_aspect",
   "sigil": "enchantingcrafts:item/sigils/fire_aspect",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:flint_and_steel"},
+        {"item": "minecraft:lava_bucket"}
+      ]
+    },
+    {"type": "enchantingcrafts:submerge_lava"}
   ]
 }

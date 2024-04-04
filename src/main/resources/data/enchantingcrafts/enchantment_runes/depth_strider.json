@@ -2,8 +2,36 @@
   "enchantment": "minecraft:depth_strider",
   "sigil": "enchantingcrafts:item/sigils/depth_strider",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:cod_bucket"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:ink_sac"},
+        {"item": "minecraft:ink_sac"},
+        {"item": "minecraft:ink_sac"},
+        {"item": "minecraft:leather_boots"},
+        {"item": "minecraft:salmon_bucket"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:sugar"},
+        {"item": "minecraft:axolotl_bucket"},
+        {"item": "minecraft:tropical_fish_bucket"},
+        {"item": "minecraft:pufferfish_bucket"}
+      ]
+    }
   ]
 }

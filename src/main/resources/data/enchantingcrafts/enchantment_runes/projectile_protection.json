@@ -2,9 +2,42 @@
   "enchantment": "minecraft:projectile_protection",
   "sigil": "enchantingcrafts:item/sigils/projectile_protection",
   "recipes": [
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"},
-    {"type": "enchantingcrafts:dummy"}
+    {
+      "items": [
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:shield"},
+        {"item": "minecraft:arrow"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:fire_charge"},
+        {"item": "minecraft:shield"},
+        {"item": "minecraft:fire_charge"}
+      ]
+    },
+    {
+      "items": [
+        {"item": "minecraft:bow"},
+        {"item": "minecraft:crossbow"},
+        {"item": "minecraft:shield"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:arrow"},
+        {"item": "minecraft:spectral_arrow"},
+        {"item": "minecraft:spectral_arrow"}
+      ]
+    },
+    {"type": "enchantingcrafts:charge_take_damage", "tag": "is_projectile", "count": 30}
   ]
 }
