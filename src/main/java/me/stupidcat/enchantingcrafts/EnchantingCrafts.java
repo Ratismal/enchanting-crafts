@@ -1,9 +1,13 @@
 package me.stupidcat.enchantingcrafts;
 
+import me.stupidcat.enchantingcrafts.data.runes.RuneDataEntries;
 import me.stupidcat.enchantingcrafts.data.runes.RuneDataResourceReloadListener;
+import me.stupidcat.enchantingcrafts.networking.SyncRunesS2CPacket;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.minecraft.resource.ResourceType;
 import net.minecraft.util.Identifier;
@@ -24,18 +28,30 @@ public class EnchantingCrafts implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		register();
 
 		ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(new RuneDataResourceReloadListener());
-
-		register();
 	}
 
 	public void register() {
 		CraftsItems.register();
 		CraftsItemGroups.register();
-		CraftsRecipes.register();
-		CraftsCraftingMethods.register();
 		CraftsLoot.register();
+		CraftsCraftingMethods.register();
+
+		CraftsRecipes.register();
+
+		ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((phase, listener, success) -> {
+			for (var rune : RuneDataEntries.runeMap.values()) {
+				for (var recipe : rune.recipes) {
+					recipe.refreshRecipe();
+				}
+			}
+		});
+
+		ServerLifecycleEvents.SYNC_DATA_PACK_CONTENTS.register(EnchantingCrafts.Id("enchantment_runes"), (player, joined) -> {
+			ServerPlayNetworking.send(player, new SyncRunesS2CPacket(RuneDataEntries.getRawData()));
+		});
 	}
 
 	public static Identifier Id(String path) {

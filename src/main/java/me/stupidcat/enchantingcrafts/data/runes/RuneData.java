@@ -18,11 +18,14 @@ public class RuneData {
     public Enchantment enchantment;
     public List<RuneDataRecipe> recipes = new ArrayList<>();
 
+    public String jsonCode;
+
     public RuneData(Identifier id) {
         this.id = id;
     }
 
     public void parseJson(JsonObject json) {
+        jsonCode = json.toString();
         enchantmentId = Identifier.tryParse(json.get("enchantment").getAsString());
         sigilId = Identifier.tryParse(json.get("sigil").getAsString());
         enchantment = Registries.ENCHANTMENT.get(enchantmentId);

@@ -75,10 +75,12 @@ public class RuneRecipe extends SpecialCraftingRecipe {
             var level = entry.getValue();
             if (RuneDataEntries.runeMap.containsKey(enchantment)) {
                 var data = RuneDataEntries.runeMap.get(enchantment);
-                var match = data.match(newItems, level + 1);
-                if (match) {
-                    applyEnchantments = true;
-                    enchantments.put(enchantment, level + 1);
+                if (data != null) {
+                    var match = data.match(newItems, level + 1);
+                    if (match) {
+                        applyEnchantments = true;
+                        enchantments.put(enchantment, level + 1);
+                    }
                 }
             }
         }

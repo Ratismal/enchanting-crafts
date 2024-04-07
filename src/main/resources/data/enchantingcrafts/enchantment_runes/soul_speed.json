@@ -14,8 +14,8 @@
         {"item": "minecraft:glowstone"},
         {"item": "minecraft:glowstone"},
         {"item": "minecraft:ghast_tear"},
-        {"tag": "minecraft:soul_speed_blocks"},
-        {"tag": "minecraft:soul_speed_blocks"}
+        {"item": "minecraft:soul_sand"},
+        {"item": "minecraft:soul_sand"}
       ]
     },
 

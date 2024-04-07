@@ -71,7 +71,7 @@ public class AttunedRuneItem extends Item {
     public static ItemStack getMega() {
         var stack = CraftsItems.ATTUNED_RUNE.getDefaultStack();
 
-        var sortedEnchantList = getSortedEnchantmentList();
+        var sortedEnchantList = getSortedEnchantmentList().stream().filter((entry) -> !entry.enchantment.isCursed()).toList();
 
         stack.setCustomName(Text.translatable("item.enchantingcrafts.mega_rune")
                 .setStyle(Style.EMPTY

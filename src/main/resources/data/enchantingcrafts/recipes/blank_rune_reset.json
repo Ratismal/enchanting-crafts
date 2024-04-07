@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "enchantingcrafts:attuned_rune"
+    }
+  ],
+  "result": {
+    "item": "enchantingcrafts:blank_rune",
+    "count": 1
+  }
+}

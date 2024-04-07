@@ -16,7 +16,7 @@
       "items": [
         {"item": "minecraft:soul_lantern"},
         {"item": "minecraft:soul_lantern"},
-        {"item": "minecraft:music_disc_11"},
+        {"tag": "minecraft:music_discs"},
         {"item": "minecraft:mud"},
         {"item": "minecraft:mud"},
         {"item": "minecraft:granite"},

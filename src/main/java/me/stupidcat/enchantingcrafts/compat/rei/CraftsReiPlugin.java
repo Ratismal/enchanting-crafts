@@ -61,7 +61,7 @@ public class CraftsReiPlugin implements REIClientPlugin {
                 if (recipe instanceof RuneDataOtherRecipe otherRecipe) {
                     // TODO: Add other recipe types
                 } else {
-                    var ingredients = new ArrayList<Ingredient>(recipe.predicates);
+                    var ingredients = new ArrayList<Ingredient>(recipe.getIngredients());
                     if (ingredients.size() >= 4) {
                         ingredients.add(4, Ingredient.ofStacks(inputRune));
                     } else {

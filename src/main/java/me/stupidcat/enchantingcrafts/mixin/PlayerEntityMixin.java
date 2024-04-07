@@ -26,5 +26,7 @@ public class PlayerEntityMixin {
         var amount = player.getHealth() - health;
         EnchantingCrafts.LOGGER.info("Took {} damage", amount);
         ChargeTakeDamageCraftingMethod.check(player, source, amount);
+
+        player.setHealth(health);
     }
 }

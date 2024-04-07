@@ -16,28 +16,41 @@ import java.util.Map;
 public class RuneDataEntries {
     public static List<RuneData> runes = new ArrayList<>();
     public static Map<Enchantment, RuneData> runeMap = new HashMap<>();
-
     public static HashMap<Identifier, JsonObject> savedJson = new HashMap<>();
     public static Map<Integer, List<RuneDataRecipe>> recipes = new HashMap<>();
-
     public static Map<CraftingMethod, List<RuneDataOtherRecipe>> otherRecipes = new HashMap<>();
+    static Map<Identifier, String> rawData = new HashMap<>();
+
+    public static void reset() {
+        runes.clear();
+        runeMap.clear();
+        savedJson.clear();
+        recipes.clear();
+        otherRecipes.clear();
+        rawData.clear();
+    }
+
+    public static Map<Identifier, String> getRawData() {
+        return rawData;
+    }
 
     public static RuneData register(RuneData runeData) {
         if (runeMap.containsKey(runeData.enchantment)) {
             for (var recipe : runeMap.get(runeData.enchantment).recipes) {
-                var list = recipes.get(recipe.predicates.size());
+                var list = recipes.get(recipe.getIngredientCount());
                 if (list != null) {
                     list.remove(recipe);
                 }
             }
         }
 
+        rawData.put(runeData.id, runeData.jsonCode);
         runeMap.put(runeData.enchantment, runeData);
 
         // Cache first recipe by number of items
         if (runeData.recipes.size() > 0) {
             var firstRecipe = runeData.recipes.get(0);
-            var list = recipes.computeIfAbsent(firstRecipe.predicates.size(), k -> new ArrayList<>());
+            var list = recipes.computeIfAbsent(firstRecipe.getIngredientCount(), k -> new ArrayList<>());
             list.add(firstRecipe);
 
             for (var recipe : runeData.recipes) {

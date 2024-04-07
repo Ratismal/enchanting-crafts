@@ -29,8 +29,15 @@ public class CraftsItemGroups {
 
                 for (var entry : AttunedRuneItem.getSortedEnchantmentList()) {
                     var data = RuneDataEntries.runeMap.get(entry.enchantment);
-                    for (var i = 1; i <= Math.max(entry.enchantment.getMaxLevel(), data.recipes.size()); i++) {
-                        entries.add(AttunedRuneItem.Of(Objects.requireNonNull(EnchantmentHelper.getEnchantmentId(entry.enchantment)), i));
+                    if (data != null && data.recipes != null) {
+                        for (var i = 1; i <= Math.max(entry.enchantment.getMaxLevel(), data.recipes.size()); i++) {
+                            entries.add(AttunedRuneItem.Of(Objects.requireNonNull(EnchantmentHelper.getEnchantmentId(entry.enchantment)), i));
+                        }
+                    } else {
+                        EnchantingCrafts.LOGGER.info("No recipe present for enchantment: {}", EnchantmentHelper.getEnchantmentId(entry.enchantment));
+                        for (var i = 1; i <= entry.enchantment.getMaxLevel(); i++) {
+                            entries.add(AttunedRuneItem.Of(Objects.requireNonNull(EnchantmentHelper.getEnchantmentId(entry.enchantment)), i));
+                        }
                     }
                 }
             })

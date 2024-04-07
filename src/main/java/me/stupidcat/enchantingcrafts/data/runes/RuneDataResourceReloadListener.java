@@ -3,11 +3,15 @@ package me.stupidcat.enchantingcrafts.data.runes;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import me.stupidcat.enchantingcrafts.EnchantingCrafts;
+import net.fabricmc.fabric.api.resource.ResourceReloadListenerKeys;
 import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
 
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 public class RuneDataResourceReloadListener implements SimpleSynchronousResourceReloadListener {
     public static final String DATA_ID = "enchantment_runes";
@@ -19,8 +23,7 @@ public class RuneDataResourceReloadListener implements SimpleSynchronousResource
 
     @Override
     public void reload(ResourceManager manager) {
-        RuneDataEntries.runes.clear();
-
+        RuneDataEntries.reset();
         manager.findResources(DATA_ID, id -> id.getPath().endsWith(".json")).forEach((resourceId, resource) -> {
             try {
                 var length = DATA_ID.length();

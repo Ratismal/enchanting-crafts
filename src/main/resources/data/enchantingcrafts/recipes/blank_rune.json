@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DRD",
+    "DND",
+    "DDD"
+  ],
+  "key": {
+    "R": {
+      "item": "enchantingcrafts:blank_rune"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "enchantingcrafts:blank_rune",
+    "count": 2
+  }
+}
